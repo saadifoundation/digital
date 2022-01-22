@@ -123,6 +123,8 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'github_link' => env('GITHUB_LINK'),
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
