@@ -1,0 +1,270 @@
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 900;
+	src: url('../font/IRANSansWeb.ttf');
+}
+
+@import 'font-awesome.min.css';
+
+/** Colors:
+N:  #f7941d (#fed09e, #f16621)
+A:  #ee1c25 (#fbbea9, #ba131a)
+B1: #8dd8f8 (#c6e9fc, #3daed6) 
+B2: #2d93d1 (#bad2ee, #2270a0)
+B3: #0065b3 (#80a0d3, #004c88)
+C1: #00a650 (#c0e2ca, #017337)
+C2: #63409a (#bbafd5, #422367)
+*/
+:root {
+  --level-n: #f7941d;
+  --level-n-low: #fed09e;
+  --level-n-high: #f16621;
+  --level-a: #ee1c25;
+  --level-a-low: #fbbea9;
+  --level-a-high: #ba131a;
+  --level-b1: #8dd8f8;
+  --level-b1-low: #c6e9fc;
+  --level-b1-high: #3daed6;
+  --level-b2: #2d93d1;
+  --level-b2-low: #bad2ee;
+  --level-b2-high: #2270a0;
+  --level-b3: #0065b3;
+  --level-b3-low: #80a0d3;
+  --level-b3-high: #004c88;
+  --level-c1: #00a650;
+  --level-c1-low: #c0e2ca;
+  --level-c1-high: #017337;
+  --level-c2: #63409a;
+  --level-c2-low: #bbafd5;
+  --level-c2-high: #422367;
+}
+
+.bg-level-n {
+  background-color: var(--level-n);
+}
+a.bg-level-n:hover, a.bg-level-n:focus,
+button.bg-level-n:hover,
+button.bg-level-n:focus {
+  background-color: var(--level-n-high) !important;
+}
+.border-level-n {
+  border-color:var(--level-n)!important;
+}
+
+.bg-level-a {
+  background-color: var(--level-a);
+}
+a.bg-level-a:hover, a.bg-level-a:focus,
+button.bg-level-a:hover,
+button.bg-level-a:focus {
+  background-color: var(--level-a-high) !important;
+}
+.border-level-a {
+  border-color:var(--level-a)!important;
+}
+
+.bg-level-b1 {
+  background-color: var(--level-b1);
+}
+a.bg-level-b1:hover, a.bg-level-b1:focus,
+button.bg-level-b1:hover,
+button.bg-level-b1:focus {
+  background-color: var(--level-b1-high) !important;
+}
+.border-level-b1 {
+  border-color:var(--level-b1)!important;
+}
+
+.bg-level-b2 {
+  background-color: var(--level-b2);
+}
+a.bg-level-b2:hover, a.bg-level-b2:focus,
+button.bg-level-b2:hover,
+button.bg-level-b2:focus {
+  background-color: var(--level-b2-high) !important;
+}
+.border-level-b2 {
+  border-color:var(--level-b2)!important;
+}
+
+.bg-level-b3 {
+  background-color: var(--level-b3);
+}
+a.bg-level-b3:hover, a.bg-level-b3:focus,
+button.bg-level-b3:hover,
+button.bg-level-b3:focus {
+  background-color: var(--level-b3-high) !important;
+}
+.border-level-b3 {
+  border-color:var(--level-b3)!important;
+}
+
+.bg-level-c1 {
+  background-color: var(--level-c1);
+}
+a.bg-level-c1:hover, a.bg-level-c1:focus,
+button.bg-level-c1:hover,
+button.bg-level-c1:focus {
+  background-color: var(--level-c1-high) !important;
+}
+.border-level-c1 {
+  border-color:var(--level-c1)!important;
+}
+
+.bg-level-c2 {
+  background-color: var(--level-c2);
+}
+a.bg-level-c2:hover, a.bg-level-c2:focus,
+button.bg-level-c2:hover,
+button.bg-level-c2:focus {
+  background-color: var(--level-c2-high) !important;
+}
+.border-level-c2 {
+  border-color:var(--level-c2)!important;
+}
+
+
+html {
+    font-family: IRANSans !important;
+    direction: rtl;
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  body, h1, h2, h3, h4, h5, h6,input, p, textarea {
+    font-family: IRANSans !important;
+  }
+  .container {
+    max-width: 960px;
+  }
+  
+  .book-header {
+    max-width: 700px;
+  }
+  
+  .card-deck .card {
+    min-width: 220px;
+  }
+  
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  audio {
+      width: 100%;
+  }
+
+  th, tr, td {
+    vertical-align: middle !important;
+  }
+  
+  /* hover effects */
+  .cover>img:hover {
+    filter: drop-shadow(5px 5px 5px #345493);
+    transition: filter 0.2s ease-in-out;
+    transform: scale(1.05);
+  }
+
+  .buttons>a:hover {
+    filter: drop-shadow(5px 5px 5px #345493);
+    transition: filter 0.2s ease-in-out;
+    transform: scale(1.2);
+  }
+
+  .person:hover {
+    filter: drop-shadow(5px 5px 5px #345493);
+    transition: filter 0.2s ease-in-out;
+  }
+
+  .book-card:hover {
+    filter: drop-shadow(5px 5px 5px #345493);
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  a.level {
+    color: black;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+  /* breadcrump */
+  .breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+    padding-left: 0.2rem;
+  }
+  .breadcrumb-item+.breadcrumb-item {
+    padding-left: 0;
+  }
+
+  /*caption*/
+  .caption {
+    direction: rtl;
+    text-align: center;
+  }
+  .teaching-video-button {
+    direction: rtl;
+    text-align: center;
+  }
+
+  /* width for books on index */
+  .w-10 {
+    width: 10%!important;
+  }
+
+  .book-status-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .container-image-with-badge {
+    position: relative;
+    display: inline-block;
+  }
+
+  /*correct display other language texts (specially numbers) */
+  :lang(en),:lang(de),:lang(fr), :lang(zh), :lang(bn),
+  :lang(da), :lang(bn), :lang(ru), :lang(sr), :lang(es),
+  :lang(tr), :lang(tg), :lang(hy) {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",
+      Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+  }
+  :lang(ar), :lang(ur) {
+    font-family: IRANSans !important;
+  }
+
+  /* video aparat */
+  .h_iframe-aparat_embed_frame {
+    position:relative;
+  }
+  .h_iframe-aparat_embed_frame .ratio {
+    display:block;
+    width:100%;
+    height:auto;
+  }
+  .h_iframe-aparat_embed_frame iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  
