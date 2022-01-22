@@ -96,7 +96,7 @@
                             <td>
                               @foreach ($level->options as $option)
                                 <a href="{{ route('options.show', $option->title_abbr) }}" class="icon">
-                                  <img src="{{ $option->icon !== null ? Storage::url($option->icon) : asset('img/icon.jpg') }}" alt="{{ $option->title }}" title="{{ $option->title }}" class="w-10 mb-3">
+                                  <img src="{{ $option->icon !== null ? Storage::url($option->icon) : asset('img/icon.jpg') }}" alt="{{ $option->title }}" title="{{ $option->title }}" class="w-25 mb-3">
                                 </a>
                               @endforeach
                             </td>
@@ -112,7 +112,7 @@
                             <td>
                               @foreach ($other_tag->options as $option)
                                 <a href="{{ route('options.show', $option->title_abbr) }}" class="icon">
-                                  <img src="{{ $option->icon !== null ? Storage::url($option->icon) : asset('img/icon.jpg') }}" alt="{{ $option->title }}" title="{{ $option->title }}" class="w-10 mb-3">
+                                  <img src="{{ $option->icon !== null ? Storage::url($option->icon) : asset('img/icon.jpg') }}" alt="{{ $option->title }}" title="{{ $option->title }}" class="w-25 mb-3">
                                 </a>
                               @endforeach
                             </td>
