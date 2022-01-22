@@ -67,7 +67,7 @@
       
       @if($option->intro !== NULL)
         <div class="description font-weight-light mb-4 text-justify">
-            {!! nl2br($option->intro) !!}
+            {!! $option->intro !!}
         </div>
       @endif
 
