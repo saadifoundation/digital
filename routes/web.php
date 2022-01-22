@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\LevelController;
+use App\Http\Controllers\OptionController;
+use App\Http\Controllers\TagController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +18,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [IndexController::class, 'index'])->name('index');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('levels', LevelController::class);
+
+Route::resource('tags', TagController::class);
+
+Route::resource('users', UserController::class);
+
+Route::resource('options', OptionController::class);
+Route::redirect('/{option}', '/options/{option}');
