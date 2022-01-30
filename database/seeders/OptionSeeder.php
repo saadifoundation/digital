@@ -106,7 +106,7 @@ class OptionSeeder extends Seeder
                 </li>
                 </ol>
                 INTRO,
-                'intro_video' => null,
+                'intro_video' => 'j5Om8',
                 'main_link' => 'https://s1f.ir/1stemdownload',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
@@ -155,7 +155,7 @@ class OptionSeeder extends Seeder
                 </li>
                 </ol>
                 INTRO,
-                'intro_video' => null,
+                'intro_video' => 'pZleQ',
                 'main_link' => 'https://mina.saadifoundation.ir',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
@@ -204,7 +204,7 @@ class OptionSeeder extends Seeder
                 </li>
                 </ol>
                 INTRO,
-                'intro_video' => null,
+                'intro_video' => 'sThC6',
                 'main_link' => 'https://persiangrammar.saadifoundation.ir',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
@@ -239,7 +239,7 @@ class OptionSeeder extends Seeder
                 </ol>
                 INTRO,
                 'intro_video' => null,
-                'main_link' => 'https://play.google.com/store/apps/details?id=com.navidokht.persian',
+                'main_link' => 'https://cafebazaar.ir/app/com.navidokht.persian',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
                 ],
@@ -458,8 +458,8 @@ class OptionSeeder extends Seeder
                 </li>
                 </ol>
                 INTRO,
-                'intro_video' => null,
-                'main_link' => null,
+                'intro_video' => 'UqTJK',
+                'main_link' => 'https://books.saadifoundation.ir',
                 'levels' => null,
                 'tags' => [
                     'enrichment',
@@ -504,7 +504,7 @@ class OptionSeeder extends Seeder
                 </ol>
                 INTRO,
                 'intro_video' => null,
-                'main_link' => null,
+                'main_link' => 'https://core.saadifoundation.ir/product-category/courses/learn-persian/?lang=en',
                 'levels' => null,
                 'tags' => [
                     'infrastructure',
@@ -531,7 +531,7 @@ class OptionSeeder extends Seeder
                 <li>همتاارزیابی دانشجویان از همدیگر (در برخی از دوره‌ها)</li>
                 </ol>
                 INTRO,
-                'intro_video' => null,
+                'intro_video' => '6NHPZ',
                 'main_link' => 'https://s1f.ir/vttc2',
                 'levels' => null,
                 'tags' => [
@@ -575,7 +575,7 @@ class OptionSeeder extends Seeder
                 </ol>
                 INTRO,
                 'intro_video' => null,
-                'main_link' => 'https://s1f.ir/vttc2',
+                'main_link' => 'https://core.saadifoundation.ir/courses',
                 'levels' => null,
                 'tags' => [
                     'infrastructure',
@@ -626,7 +626,7 @@ class OptionSeeder extends Seeder
                 </li>
                 </ol>
                 INTRO,
-                'intro_video' => null,
+                'intro_video' => 'r9ZQg',
                 'main_link' => 'https://amfa.ir',
                 'levels' => null,
                 'tags' => [
@@ -823,7 +823,7 @@ class OptionSeeder extends Seeder
                 </li>
                 </ol>
                 INTRO,
-                'intro_video' => null,
+                'intro_video' => 'ugB3o',
                 'main_link' => null,
                 'levels' => null,
                 'tags' => [
