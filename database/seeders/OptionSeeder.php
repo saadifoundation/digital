@@ -107,7 +107,7 @@ class OptionSeeder extends Seeder
                 </ol>
                 INTRO,
                 'intro_video' => 'j5Om8',
-                'main_link' => 'https://s1f.ir/1stemdownload',
+                'main_link' => 'https://s1f.ir/1ststepdownload',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'n'),
                 ],
