@@ -57,6 +57,7 @@ class OptionSeeder extends Seeder
                     Level::firstWhere('title_abbr', 'n'),
                 ],
                 'tags' => null,
+                'is_active' => false,
             ],
             //multimedia
             [
@@ -254,6 +255,10 @@ class OptionSeeder extends Seeder
                 <p>
                 واژه‌بازی به دو صورت یک نفره (مرحله ای) و رقابتی (آنلاین) طراحی شده‌است. واژه‌بازی یک بازی فکری است که نیازمند هوش بالا، حافظه قوی و آشنایی با کلمات مختلف فارسی است. در این بازی شما می‌بایست با کشیدن انگشت روی جدول، کلمات معنادار را پیدا کرده و به نسبت تعداد حروف آنها امتیاز کسب کنید. حالت یک‌نفره این بازی هم به‌صورت امتیازی و هم به‌صورت مرحله‌ای است، بنابراین هم می‌توانید با کسب امتیاز بالا رکورد خود را ثبت کنید و هم مراحل بازی را طی کنید تا به مرحله آخر برسید. در این بازی، ۴۵۵ مرحله وجود دارد که در هر مرحله سه کلمه خاص به شما ارائه می‌شود تا آنها را در جدول پیدا کنید، مرحله اول با کلمات ساده دوحرفی شروع می‌شود تا مرحله آخر که می‌بایست کلمات سخت چهارده‌حرفی را پیدا کنید. در حالت رقابتی در این بازی می‌توانید با کسب امتیاز به‌صورت آنلاین با دیگران رقابت کنید، چنانچه با کلمات فارسی بیشتری آشنایی داشته و همچنین از هوش بالاتر و حافظه قوی‌تری برخوردار باشید، می‌توانید رتبه بهتری کسب نمایید. در این حالت، در هر روز یک جدول مشترک به همه نمایش داده می‌شود و امتیازات کسب‌شده فقط مربوط به همان جدول است، بنابراین هر روز یک رقابت جدید با یک جدول جدید پیش رو خواهید داشت.
                 </p>
+                <a href='https://cafebazaar.ir/app/ir.saadifoundation.vazhe' target='_blank'>
+                واژه‌بازی 2
+                </a>
+                <p></p>
                 <h2>
                 ویژگی‌های اصلی
                 </h2>
@@ -267,7 +272,7 @@ class OptionSeeder extends Seeder
                 </ol>
                 INTRO,
                 'intro_video' => null,
-                'main_link' => 'https://play.google.com/store/apps/details?id=com.shahmiri.vazhehbazi',
+                'main_link' => 'https://cafebazaar.ir/app/com.shahmiri.vazhehbazi',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
                 ],
@@ -389,7 +394,7 @@ class OptionSeeder extends Seeder
                 </ol>
                 INTRO,
                 'intro_video' => null,
-                'main_link' => null,
+                'main_link' => 'https://taaghche.com/publisher/انتشارات-آزفا-(وابسته-به-بنیاد-سعدی)',
                 'levels' => null,
                 'tags' => [
                     'enrichment',
@@ -753,6 +758,7 @@ class OptionSeeder extends Seeder
                 'tags' => [
                     'how-to-teach',
                 ],
+                'is_active' => false,
             ],
             //studio
             [
@@ -803,6 +809,7 @@ class OptionSeeder extends Seeder
             $option->intro = $option_data['intro'];
             $option->intro_video = $option_data['intro_video'];
             $option->main_link = $option_data['main_link'];
+            $option->is_active = $option_data['is_active'] ?? true;
             $option->save();
 
             if ($option_data['levels'] !== null) {
