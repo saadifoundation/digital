@@ -15,7 +15,7 @@ class OptionController extends Controller
      */
     public function index()
     {
-        $options = Option::all();
+        $options = Option::where('is_active', true)->get();
         return view('options.index', [
             'options' => $options,
         ]);
@@ -50,6 +50,10 @@ class OptionController extends Controller
      */
     public function show(Option $option)
     {
+        if (!$option->is_active) {
+            return abort(404);
+        }
+
         $levels = Level::all();
 
         return view(

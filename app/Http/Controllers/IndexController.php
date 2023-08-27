@@ -13,17 +13,22 @@ class IndexController extends Controller
 {
     public function index()
     {
-        $levels = Level::all();
-        $options = Option::all();
-        $users = User::all();
-        $other_options_tags = Tag::all()->whereIn('title_abbr', ['how-to-teach', 'enrichment', 'test', 'infrastructure']);
+        $levels = Level::with(['options' => function ($query) {
+            $query->where('is_active', true);
+        }])->get();
+
+        $options = Option::where('is_active', true)->get();
+        $other_options_tags = Tag::with(['options' => function ($query) {
+                                $query->where('is_active', true);
+                            }])
+                            ->whereIn('title_abbr', ['how-to-teach', 'enrichment', 'test', 'infrastructure'])
+                            ->get();
 
         return view(
             'index',
             [
                 'levels' => $levels,
                 'options' => $options,
-                'users' => $users,
                 'other_options_tags' => $other_options_tags,
             ]
         );
