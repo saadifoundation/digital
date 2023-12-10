@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class OptionTagPivotTable extends Migration
+class LevelOptionPivotTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class OptionTagPivotTable extends Migration
      */
     public function up()
     {
-        Schema::create('option_tag', function (Blueprint $table) {
+        Schema::create('level_option', function (Blueprint $table) {
             $table->foreignId('option_id')->constrained()->onDelete('cascade');
-            $table->foreignId('tag_id')->constrained()->onDelete('cascade');
-            $table->primary(['option_id', 'tag_id']);
+            $table->foreignId('level_id')->constrained()->onDelete('cascade');
+            $table->primary(['option_id', 'level_id']);
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class OptionTagPivotTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('level_option');
     }
 }
