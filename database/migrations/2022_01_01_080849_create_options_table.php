@@ -21,6 +21,7 @@ class CreateOptionsTable extends Migration
             $table->text('intro')->nullable();
             $table->string('intro_video')->nullable();
             $table->string('main_link')->nullable();
+            $table->string('sample_file')->nullable();
             $table->timestamps();
         });
     }
