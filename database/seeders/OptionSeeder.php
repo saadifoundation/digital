@@ -865,7 +865,7 @@ class OptionSeeder extends Seeder
             $option->intro = $option_data['intro'];
             $option->intro_video = $option_data['intro_video'];
             $option->main_link = $option_data['main_link'];
-            $option->sample_file = $option_data['sample_file'];
+            $option->sample_file = $option_data['sample_file'] ?? null;
             $option->is_active = $option_data['is_active'] ?? true;
             $option->save();
 
