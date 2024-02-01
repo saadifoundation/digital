@@ -850,11 +850,11 @@ class OptionSeeder extends Seeder
                 INTRO,
                 'intro_video' => null,
                 'main_link' => 'https://core.saadifoundation.ir/product/%d8%b4%d9%85%d8%a7%d8%b1%d9%87-%d8%b3%d8%b1%db%8c%d8%a7%d9%84-%d9%86%d8%b1%d9%85%d8%a7%d9%81%d8%b2%d8%a7%d8%b1-%d9%88%d8%a7%da%98%d9%87/',
+                'sample_file' => 'samples/persian-vocab-in-use.rar',
                 'levels' => [
                     Level::firstWhere('title_abbr', 'a'),
                 ],
                 'tags' => null,
-                'sample_file' => 'samples/persian-vocab-in-use.rar',
             ],
         ];
         foreach ($options_data as $option_data) {
@@ -865,6 +865,7 @@ class OptionSeeder extends Seeder
             $option->intro = $option_data['intro'];
             $option->intro_video = $option_data['intro_video'];
             $option->main_link = $option_data['main_link'];
+            $option->sample_file = $option_data['sample_file'];
             $option->is_active = $option_data['is_active'] ?? true;
             $option->save();
 
