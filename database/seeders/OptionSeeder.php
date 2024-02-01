@@ -854,6 +854,7 @@ class OptionSeeder extends Seeder
                     Level::firstWhere('title_abbr', 'a'),
                 ],
                 'tags' => null,
+                'sample_file' => 'samples/persian-vocab-in-use.rar',
             ],
         ];
         foreach ($options_data as $option_data) {

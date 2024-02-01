@@ -35,6 +35,11 @@
               <img src="{{ asset('img/buttons/01_elearning.png') }}" alt="" class="w-75">
             </a>
           @endif
+          @if($option->sample_file !== NULL)
+            <a href="{{ Storage::url($option->sample_file) }}" target="_blank">
+              <img src="{{ asset('img/buttons/04_Sample.png') }}" alt="" class="w-75">
+            </a>
+          @endif
         </div>
       </div>
 
