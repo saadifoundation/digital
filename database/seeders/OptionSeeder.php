@@ -504,7 +504,7 @@ class OptionSeeder extends Seeder
                 </ol>
                 INTRO,
                 'intro_video' => '6NHPZ',
-                'main_link' => 'https://s1f.ir/vttc2',
+                'main_link' => 'https://core.saadifoundation.ir/product-category/courses/تربیت-مدرس/virtual-ttc',
                 'levels' => null,
                 'tags' => [
                     'how-to-teach',
