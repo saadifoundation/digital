@@ -19,10 +19,10 @@
         </div>
         <div class="badges mb-3">
           <a href="#levels-row" class="btn btn-success btn-sm mb-3">
-              {{ __('سطوح') }} <span class="badge badge-light">{{ $levels->count() }}</span>
+              {{ __('سطوح') }} <span class="badge text-bg-light">{{ $levels->count() }}</span>
           </a>
           <a href="#options-row" class="btn btn-primary btn-sm mb-3">
-            {{ __('امکانات') }} <span class="badge badge-light">{{ $options->count() }}</span>
+            {{ __('امکانات') }} <span class="badge text-bg-light">{{ $options->count() }}</span>
           </a>
         </div>
       </div>
@@ -105,7 +105,7 @@
                         @foreach ($other_options_tags as $other_tag)
                           <tr>
                             <th scope="row">
-                              <a href="{{ route('tags.show', $other_tag) }}" class="badge badge-info">
+                              <a href="{{ route('tags.show', $other_tag) }}" class="badge text-bg-info">
                                 {{$other_tag->title}}
                               </a>
                             </th>
@@ -151,7 +151,7 @@
                         @endforeach
                         @foreach ($option->tags as $tag)
                           <a href="{{ route('tags.show', $tag) }}">
-                            <span class="badge badge-info">
+                            <span class="badge text-bg-info">
                               {{ $tag->title }}
                             </span>
                           </a>

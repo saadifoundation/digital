@@ -6,9 +6,7 @@
 
     <title>@yield('title')</title>
 
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <script src="https://kit.fontawesome.com/9a2db51625.js" crossorigin="anonymous"></script>
+    @vite(['resources/css/app.scss', 'resources/js/app.js'])
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicons/ssadifoundation-apple-icon-57x57.png') }}">
@@ -92,12 +90,6 @@
                 <img class="mb-2" src="{{ asset('/img/saadifoundation-logo.png') }}" alt="" width="24" height="24">
               </a>
               <small class="d-block mb-3 text-muted" style="font-family: Roboto;">&copy; {{ \Carbon\Carbon::now()->year }} Saadi Foundation</small>
-              <small class="d-block mb-3 text-muted">
-                  Developed By: 
-                  <a href="https://amirmojiri.ir" target="_blank">
-                    Amir Mojiri
-                  </a>
-              </small>
           </div>
       </div>
       <div class="row">
@@ -111,10 +103,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
 </body>
 </html>

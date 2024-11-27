@@ -27,9 +27,9 @@
           </h2>
           <div class="alert alert-primary" role="alert">
             تاکنون
-            <span class="badge badge-light">{{ $tag->options->count() }}</span>
+            <span class="badge text-bg-light">{{ $tag->options->count() }}</span>
             امکان مجازی با برچسب
-            <span class="badge badge-info">
+            <span class="badge text-bg-info">
                 {{$tag->title}}
             </span>
             در بنیاد سعدی تهیه شده است.
@@ -55,7 +55,7 @@
                           @endforeach
                           @foreach ($option->tags as $tag)
                             <a href="{{ route('tags.show', $tag) }}">
-                              <span class="badge badge-info">
+                              <span class="badge text-bg-info">
                                 {{ $tag->title }}
                               </span>
                             </a>

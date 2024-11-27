@@ -63,7 +63,7 @@
       @if ( $option->tags->isNotEmpty() )
         <div class="labels mb-3 text-right mb-4">
           @foreach($option->tags as $tag)
-            <a class="badge badge-info" href="{{ route('tags.show', $tag) }}">
+            <a class="badge text-bg-info" href="{{ route('tags.show', $tag) }}">
               {{ $tag->title }}
             </a>
           @endforeach

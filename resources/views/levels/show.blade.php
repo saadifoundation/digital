@@ -24,7 +24,7 @@
     <div class="col-12">
       <div class="badges mb-3 text-right">
         <a href="#options-row" class="btn btn-primary btn-sm mb-3">
-          {{ __('امکانات سطح') }} <span class="badge badge-light">{{$level->options->count() }}</span>
+          {{ __('امکانات سطح') }} <span class="badge text-bg-light">{{$level->options->count() }}</span>
         </a>
       </div>
       <div class="description text-right font-weight-light">
@@ -73,7 +73,7 @@
                       @endforeach
                       @foreach ($option->tags as $tag)
                         <a href="{{ route('tags.show', $tag) }}">
-                          <span class="badge badge-info">
+                          <span class="badge text-bg-info">
                             {{ $tag->title }}
                           </span>
                         </a>

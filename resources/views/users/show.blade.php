@@ -84,7 +84,7 @@
                                     @endforeach
                                     @foreach ($book->tags as $tag)
                                         <a href="{{ route('tags.show', $tag) }}">
-                                        <span class="badge badge-info">
+                                        <span class="badge text-bg-info">
                                             {{ $tag->title }}
                                         </span>
                                         </a>
