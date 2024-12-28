@@ -49,6 +49,14 @@
     <meta name="twitter:description" content="@yield('description')">
     <meta name="twitter:image" content="@yield('image')">
 
+    <!-- Mu.chat -->
+    <script type="module">
+      import Chatbox from 'https://cdn.mu.chat/embeds/dist/chatbox/index.js?v=2';
+        
+      const widget = await Chatbox.initBubble({
+      agentId: 'cm57rc7ud04wl18i9tq0633um',
+          });
+    </script>
   </head>
   <body>
     <div class="navbar navbar-expand-sm navbar-light bg-light justify-content-center">
